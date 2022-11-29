@@ -21,11 +21,12 @@ describe("MusicNFTMarketplace", function () {
       royaltyFee,
       artist.address,
       prices,
-      { value: deploymentFees }
+      { value: deploymentFees } //
     );
 
   });
 
+  //TEST
   describe("Deployment", function () {
 
     it("Should track name, symbol, URI, royalty fee and artist", async function () {

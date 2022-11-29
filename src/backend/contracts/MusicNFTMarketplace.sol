@@ -33,7 +33,7 @@ contract MusicNFTMarketplace is ERC721("DAppFi", "DAPP"), Ownable {
     /* In constructor we initalize royalty fee, artist address and prices of music nfts*/
     constructor(
         uint256 _royaltyFee,
-        address _artist,
+        address _artist, //etherum address
         uint256[] memory _prices
     ) payable {
         require(
