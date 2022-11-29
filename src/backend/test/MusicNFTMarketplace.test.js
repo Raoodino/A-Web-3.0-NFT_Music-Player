@@ -14,7 +14,7 @@ describe("MusicNFTMarketplace", function () {
   beforeEach(async function () {
     // Get the ContractFactory and Signers here.
     const NFTMarketplaceFactory = await ethers.getContractFactory("MusicNFTMarketplace");
-    [deployer, artist, user1, user2, ...users] = await ethers.getSigners();
+    [deployer, artist, user1, user2, ...users] = await ethers.getSigners(); //RETURN deployer account
 
     // Deploy music nft marketplace contract 
     nftMarketplace = await NFTMarketplaceFactory.deploy(
